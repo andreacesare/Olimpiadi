@@ -66,6 +66,7 @@ public class Main {
                 System.out.println("3. Visualizza la lista degli ATLETI ");
                 System.out.println("4. Elimina un ATLETA");
                 System.out.println("5. Visualizza gli ATLETI che giocano a tennis nati a partire dal 2000");
+                System.out.println("6. Visualizza la lista degli atleti piu altì della media");
                 System.out.println("9. Exit");
                 System.out.print("inserisci la tua scelta: ");
                 choice2 = scanner.nextInt();
@@ -83,8 +84,12 @@ public class Main {
                         break;
                     case 4:
                         atletaController.deleteAtleta();
+                        break;
                     case 5:
                         atletaController.readAtletiTennis2000();
+                        break;
+                    case 6:
+                        atletaController.readAtletiAltezzaSopraMedia();
                         break;
                     case 9:
                         System.out.println("Exiting");

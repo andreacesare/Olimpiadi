@@ -41,6 +41,11 @@ public class AtletaService {
     }
 
     public ArrayList<Atleta> readAtletiTennis2000(){
+
         return atletaRepository.readAtletiTennis2000();
+    }
+
+    public ArrayList<Atleta> readAtletiAltezaSopraMedia() {
+        return  atletaRepository.readAtletiAltezzaSopraMedia();
     }
 }

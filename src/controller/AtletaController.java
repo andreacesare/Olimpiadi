@@ -116,4 +116,13 @@ public class AtletaController {
         }
     }
 
+    public void readAtletiAltezzaSopraMedia(){
+        System.out.println("Ecco la lista degli atleti piu alti della media");
+        AtletaService atletaService=new AtletaService();
+        ArrayList<Atleta> lista=atletaService.readAtletiAltezaSopraMedia();
+        for(Atleta a:lista){
+            System.out.println(a.getNome()+" "+a.getCognome()+" "+a.getAltezza_cm()+"cm");
+        }
+    }
+
 }
